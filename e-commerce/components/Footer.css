@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+.footer {
+background: rgba(235, 235, 235, 0.18);
+  color: #000000;
+  font-family: 'Baloo Bhai 2', sans-serif;
+  padding: 40px 20px 20px 20px;
+}
+
+.footerTop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footerLogo {
+  flex: 1 1 200px;
+}
+
+.footerLogo p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #343434;
+}
+
+.footerLinks {
+  flex: 3 1 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.linkColumn h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.linkColumn ul {
+  list-style: none;
+  
+}
+
+.linkColumn ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  
+ 
+}
+
+
+
+.footerBottom {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footerTop {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footerLinks {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,30 @@
+.productDisplay {
+  max-width: 200px;      
+  font-family: "Baloo Bhai 2", sans-serif;
+}
+
+.imageContainer {
+  width: 100%;
+  aspect-ratio: 200 / auto; 
+  overflow: hidden;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.productImage:hover {
+  transform: scale(1.1);
+}
+
+
+#name {
+  font-size: 1rem;
+}
+
+p {
+  margin: 5px 0;
+}

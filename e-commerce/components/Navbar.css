@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 40px;
+  width: 100%;
+  font-family: "SUSE Mono", sans-serif;
+
+}
+
+nav .pages ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+
+
+}
+
+nav .pages ul li {
+  font-size: 16px;
+  color: rgb(52, 52, 52);
+  position: relative;
+  cursor: pointer;
+}
+
+nav .pages ul li::before {
+  content: "";
+  position: absolute;
+  bottom: -2;
+  left: 50%;
+
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  /* thickness of the line */
+  background-color: black;
+  transition: width 0.2s ease;
+}
+
+nav .pages ul li:hover::before {
+  width: 30px;
+}
+
+nav .pages ul li:hover {
+  color: black;
+}
+
+nav .navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav .navbar-actions .nav-menu {
+  display: none;
+}
+
+nav .pages ul li.active {
+  color: black;
+}
+
+nav .pages ul li.active::before {
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  .pages {
+    display: none;
+  }
+
+  nav .navbar-actions .nav-menu {
+    display: block;
+
+  }
+
+  nav {
+    padding: 3px 20px;
+    ;
+  }
+}
+
+.searchbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(234, 234, 234, 0.192);
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.searchbar.open {
+  height: 86px;
+  opacity: 1;
+}
+
+.carticon{
+  position: relative;
+
+}
+.countspan{
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  min-width: 16px;
+  min-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  background: black;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}

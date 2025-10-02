@@ -1,0 +1,45 @@
+.aboutpage{
+     padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.image{
+    
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+.header{
+    width: 100%;
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.aboutinfo{
+    background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.aboutus{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 50px;
+    width: 100%;
+}
+

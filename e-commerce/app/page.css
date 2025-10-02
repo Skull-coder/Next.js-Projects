@@ -1,0 +1,60 @@
+.heroSection{
+    width: 98.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(195, 195, 195, 0.104);
+   border: 1px solid black;
+   margin: 0 auto;
+}
+
+.LatestCollection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.ProductsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* default → 2 columns */
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Small screens ≥640px → 3 columns */
+@media (min-width: 640px) {
+  .ProductsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large screens ≥1024px → 5 columns */
+@media (min-width: 1024px) {
+  .ProductsGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.BestSeller{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.OurPolicy{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 0 0;
+    padding: 30px 0;
+    background: rgba(235, 235, 235, 0.18);
+}
+

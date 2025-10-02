@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.Page {
+    display: flex;
+    gap: 60px;
+    width: 95%;
+    margin: 10px auto;
+    flex-direction: column;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.Filterbox {
+    padding: 20px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.107);
+    border-radius: 10px;
+}
+
+.inputs {
+    margin-top: 5px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    padding: 3px 0;
+}
+
+.allcollections {
+    flex: 1;
+    /* background: red; */
+}
+
+.AllCollectionsHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.AllCollectionsHeader .TitleText {
+    font-size: 18px;
+    
+
+}
+
+.options {
+    padding: 10px 5px;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
+
+.ProductsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.filter h2 svg {
+    display: none;
+    /* hide icons on desktop */
+}
+
+@media (max-width: 768px) {
+    .filter h2 svg {
+        display: inline;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    .options{
+        font-size: 10px;
+    }
+}
+
+/* Small screens ≥640px → 3 columns */
+@media (min-width: 640px) {
+    .ProductsGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .AllCollectionsHeader .TitleText {
+        font-size: 22px;
+        
+    }
+
+}
+
+/* Large screens ≥1024px → 5 columns */
+@media (min-width: 1024px) {
+    .ProductsGrid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .AllCollectionsHeader .TitleText {
+        font-size: 26px;
+        
+    }
+    .Page {
+        flex-direction: row;
+    }
+}
+
+
+input[type="checkbox"] {
+  accent-color: black; 
+  border: 1px solid black; 
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border-radius: 0;
+}

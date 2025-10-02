@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+.Hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10%;
+    width: 100%;
+
+
+    /* background-color: red; */
+
+
+}
+
+
+.leftHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cormorant Garamond", serif;
+    /* background: red; */
+    width: 300px;
+
+
+}
+
+.leftHero p {
+    font-size: 30px;
+}
+
+.leftHero h1 {
+    position: relative;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.leftHero h1::before {
+    content: "___";
+    /* your dashes */
+    position: absolute;
+    left: -50px;
+    top: -50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    font-size: 48px;
+    /* match h1 size */
+    color: black;
+    /* same as text or different */
+}
+
+.leftHero h1::after {
+    content: "___";
+    /* your dashes */
+    position: absolute;
+    right: -50px;
+    top: -50%;
+    transform: translateY(-50%);
+    transform: translateX(50%);
+    font-size: 48px;
+    /* match h1 size */
+    color: black;
+    /* same as text or different */
+}
+
+.Hero img{
+    width: 500px;
+}
+
+
+
+@media (max-width: 890px){
+    .Hero img{
+        width: min(100%, 500px);
+    }
+}

@@ -1,0 +1,28 @@
+.SearchInputBox input{
+    padding: 10px;
+    font-size: 22px;
+    outline: none;
+    background: transparent;
+    border: none;
+    width: 80%;
+}
+
+.SearchInputBox{
+    background: white;
+    border-radius: 24px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%; 
+    box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.1);
+    
+}
+.parentSearchInputBox{
+    display: flex;
+    align-items: center;
+    width: min(500px, 90%);
+    gap: 20px;
+    min-height: 0;
+    
+}
